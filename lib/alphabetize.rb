@@ -1,9 +1,9 @@
 require 'pry'
 
 def alphabetize(arr)
-  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
+  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   ans = arr.sort_by {|x|
-    alphabet.find_index(x.first)
+    x.tr(alphabet, "a-z")
   }
   ans 
 end
