@@ -1,3 +1,7 @@
 def alphabetize(arr)
-  # code here
+  alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  ans = arr.sort_by {|x|
+    x.tr(alphabet, "a-z")
+  }
+  ans 
 end
