@@ -3,7 +3,7 @@ require 'pry'
 def alphabetize(arr)
   alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
   arr.sort_by {|x|
-    alphabet.index(x.slice)
+    alphabet.find_index(x.slice)
   }
   arr 
 end
